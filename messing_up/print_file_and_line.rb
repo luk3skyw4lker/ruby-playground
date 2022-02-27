@@ -1,11 +1,8 @@
 #!/usr/bin ruby
+# frozen_string_literal: true
 
 def print_file
-	if block_given?
-		yield
-	else
-		return
-	end
+  yield if block_given?
 end
 
 print_file { print "EXECUTING FILE: #{__FILE__}\nIN LINE: #{__LINE__}\n" }

@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 def say_hello
-	print "Say the name of your hello! "
+  print 'Say the name of your hello! '
 
-	name = gets
+  name = gets
 
-	puts "Hello #{name}"
+  puts "Hello #{name}"
 end
 
 say_hello

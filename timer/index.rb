@@ -1,14 +1,16 @@
-def timer (start)
-	puts "Minutes: " + start.to_s
-	start_time = Time.now
+# frozen_string_literal: true
 
-	puts start_time.strftime("Start to_time: %I:%M:%S %p")
+def timer(start)
+  puts "Minutes: #{start}"
+  start_time = Time.now
 
-	start.downto(1) { |i| sleep 60 }
+  puts start_time.strftime('Start to_time: %I:%M:%S %p')
 
-	end_time = Time.now
+  start.downto(1) { |_i| sleep 60 }
 
-	puts end_time.strftime("Elapsed time: %I:%M:%S %p")
+  end_time = Time.now
+
+  puts end_time.strftime('Elapsed time: %I:%M:%S %p')
 end
 
 timer(10)

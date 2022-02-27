@@ -1,3 +1,5 @@
-prc = lambda { |name| puts "Hello, #{name}" }
+# frozen_string_literal: true
 
-prc.call "Lucas"
+prc = ->(name) { puts "Hello, #{name}" }
+
+prc.call 'Lucas'
